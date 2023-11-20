@@ -1,0 +1,36 @@
+targets:
+  $default:
+    builders:
+      freezed:
+        options:
+
+          # Disable the generation of copyWith/== for the entire project
+#          copy_with: false
+#          equal: false
+          # `when` and `map` can be enabled/disabled entirely by setting them to `true`/`false`
+#          map: false
+          # We can also enable/disable specific variants of `when`/`map` by setting them to `true`/`false`:
+#          when:
+#            when: true
+#            maybe_when: true
+#            when_or_null: fal
+
+      json_serializable:
+        options:
+          # Options configure how source code is generated for every
+          # `@JsonSerializable`-annotated class in the package.
+          #
+          # The default value for each is listed.
+          any_map: false
+          checked: false
+          constructor: ""
+          create_factory: true
+          create_field_map: false
+          create_per_field_to_json: false
+          create_to_json: true
+          disallow_unrecognized_keys: false
+          explicit_to_json: true
+          field_rename: snake
+          generic_argument_factories: false
+          ignore_unannotated: false
+          include_if_null: false
