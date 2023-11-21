@@ -34,7 +34,7 @@ extension GetItInjectableX on _i1.GetIt {
     );
     final aPIService = _$APIService();
     gh.factory<_i3.BaseConstants>(() => _i3.BaseConstants());
-    gh.factory<_i4.Dio>(() => aPIService.dio);
+    gh.singleton<_i4.Dio>(aPIService.dio);
     gh.factory<_i5.DataSource>(() => _i6.RemoteDataSource(gh<_i4.Dio>()));
     gh.factory<_i7.UserRepository>(
         () => _i8.UserRepositoryImpl(gh<_i5.DataSource>()));

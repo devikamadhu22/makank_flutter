@@ -1,3 +1,5 @@
+import 'package:awesome_dio_interceptor/awesome_dio_interceptor.dart';
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -11,6 +13,19 @@ void main() {
   WidgetsFlutterBinding.ensureInitialized();
   configureDependencies();
   Bloc.observer = AppBlocObserver();
+  final dio = getIt.get<Dio>();
+  dio.interceptors.add(
+    AwesomeDioInterceptor(
+      // Disabling headers and timeout would minimize the logging output.
+      // Optional, defaults to true
+      logRequestTimeout: false,
+      logRequestHeaders: false,
+      logResponseHeaders: false,
+
+      // Optional, defaults to the 'log' function in the 'dart:developer' package.
+      // logger: debugPrint,
+    ),
+  );
   runApp(MultiBlocProvider(
     providers: [
       BlocProvider<HomeBloc>(

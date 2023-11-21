@@ -6,7 +6,7 @@ import '../../domain/core/base_constants.dart';
 
 @module
 abstract class APIService {
-  @Injectable()
+  @Singleton()
   Dio get dio => Dio(BaseOptions(
       contentType: "application/json",
       baseUrl: getIt.get<BaseConstants>().baseUrl));
