@@ -1,3 +1,4 @@
+import 'package:fpdart/fpdart.dart';
 import 'package:injectable/injectable.dart';
 
 import '../entities/get_user_response.dart';
@@ -9,7 +10,7 @@ class GetUserUseCase {
 
   GetUserUseCase(this.userRepository);
 
-  Future<GetUserResponse> execute() {
+  Future<Either<String, GetUserResponse>> execute() {
     return userRepository.getUsers();
   }
 }

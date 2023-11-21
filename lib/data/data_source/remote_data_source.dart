@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:fpdart/fpdart.dart';
 import 'package:injectable/injectable.dart';
 
 import '../../domain/entities/get_user_response.dart';
@@ -12,9 +13,17 @@ class RemoteDataSource extends DataSource {
   RemoteDataSource(this.dio);
 
   @override
-  Future<GetUserResponse> getUsers() async {
-    final response = await dio.get("users?page=2");
+  Future<Either<String, GetUserResponse>> getUsers() async {
+    try {
+      final response = await dio.get("users?page=2");
 
-    return GetUserResponse.fromJson(response.data);
+      if (response.statusCode == 200 && response.data != null) {
+        return Right(GetUserResponse.fromJson(response.data));
+      } else {
+        return const Left("Received Error response");
+      }
+    } catch (e) {
+      return const Left("Exception Occurred while fetching users");
+    }
   }
 }

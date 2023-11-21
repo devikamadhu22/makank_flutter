@@ -1,3 +1,4 @@
+import 'package:fpdart/fpdart.dart';
 import 'package:injectable/injectable.dart';
 
 import '../../domain/entities/get_user_response.dart';
@@ -11,7 +12,7 @@ class UserRepositoryImpl extends UserRepository {
   UserRepositoryImpl(this.userDataSource);
 
   @override
-  Future<GetUserResponse> getUsers() async {
+  Future<Either<String, GetUserResponse>> getUsers() async {
     return await userDataSource.getUsers();
   }
 }

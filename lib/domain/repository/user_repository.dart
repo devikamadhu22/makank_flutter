@@ -1,5 +1,7 @@
+import 'package:fpdart/fpdart.dart';
+
 import '../entities/get_user_response.dart';
 
 abstract class UserRepository {
-  Future<GetUserResponse> getUsers();
+  Future<Either<String, GetUserResponse>> getUsers();
 }

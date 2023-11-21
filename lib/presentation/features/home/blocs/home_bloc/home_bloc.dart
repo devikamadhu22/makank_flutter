@@ -16,10 +16,11 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
     on<HomeEvent>((event, emit) async {
       emit(const HomeState.loading());
       try {
-        GetUserResponse data = await useCase.execute();
-        emit(HomeState.success(response: data));
+        final response = await useCase.execute();
+        response.fold((l) => emit(HomeState.failed(error: l)),
+            (r) => emit(HomeState.success(response: r)));
       } catch (e) {
-        emit(HomeState.failed(error: "Error occurred ${e}"));
+        emit(HomeState.failed(error: "Error occurred $e"));
       }
     });
   }
