@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../core/theme/theme_extension.dart';
+
 class CommonErrorLoadingWidget extends StatelessWidget {
   final bool isLoading;
   final String? error;
@@ -23,7 +25,7 @@ class CommonErrorLoadingWidget extends StatelessWidget {
               ? const CircularProgressIndicator()
               : Text(
                   error ?? "Unexpected Error Occurred",
-                  style: Theme.of(context).textTheme.labelLarge,
+                  style: context.myTextTheme.labelLarge,
                 ),
         ),
       );

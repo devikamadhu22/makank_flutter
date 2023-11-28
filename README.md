@@ -15,6 +15,9 @@ A template project for clean architecture with flutter_bloc.
 ``` bash
 flutter pub run build_runner build --delete-conflicting-outputs -v
 ```
+``` bash
+dart pub run build_runner build --delete-conflicting-outputs -v
+```
 
 ### Generate localization/translation cmd:
 ``` bash
