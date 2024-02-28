@@ -9,6 +9,7 @@ import 'app_input_theme.dart';
 class AppTheme {
   static ThemeData light() {
     var themeData = ThemeData(
+      useMaterial3: false,
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
           backgroundColor: AppColorScheme.surfaceColorLight,
           type: BottomNavigationBarType.fixed,

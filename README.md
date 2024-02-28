@@ -4,7 +4,7 @@ A template project for clean architecture with flutter_bloc.
 
 ### Flutter version:
 ```
-3.16.0
+3.19.1
 ```
 ### Dart version:
 ```
