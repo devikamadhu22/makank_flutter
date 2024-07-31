@@ -7,15 +7,15 @@ class AppButtonThemeData {
   static ElevatedButtonThemeData elevatedButtonThemeData() {
     return ElevatedButtonThemeData(
       style: ButtonStyle(
-        elevation: MaterialStateProperty.all(5),
-        padding: MaterialStateProperty.all(
+        elevation: WidgetStateProperty.all(5),
+        padding: WidgetStateProperty.all(
           const EdgeInsets.symmetric(
               horizontal: AppConstants.defaultPadding,
               vertical: AppConstants.defaultPadding),
         ),
         backgroundColor:
-            MaterialStateProperty.all(AppColorScheme.primaryColorLight),
-        shape: MaterialStateProperty.all(
+            WidgetStateProperty.all(AppColorScheme.primaryColorLight),
+        shape: WidgetStateProperty.all(
           RoundedRectangleBorder(
             borderRadius: AppConstants.borderRadius,
           ),
@@ -27,18 +27,18 @@ class AppButtonThemeData {
   static OutlinedButtonThemeData outlinedButtonThemeData() {
     return OutlinedButtonThemeData(
       style: ButtonStyle(
-          elevation: MaterialStateProperty.all(0),
-          padding: MaterialStateProperty.all(
+          elevation: WidgetStateProperty.all(0),
+          padding: WidgetStateProperty.all(
             const EdgeInsets.symmetric(
                 horizontal: AppConstants.defaultPadding,
                 vertical: AppConstants.defaultPadding),
           ),
-          shape: MaterialStateProperty.all(
+          shape: WidgetStateProperty.all(
             RoundedRectangleBorder(
               borderRadius: AppConstants.borderRadius,
             ),
           ),
-          side: MaterialStateProperty.all(
+          side: WidgetStateProperty.all(
             const BorderSide(color: AppColorScheme.primaryColorLight, width: 1),
           )),
     );
@@ -47,13 +47,13 @@ class AppButtonThemeData {
   static TextButtonThemeData textButtonThemeData() {
     return TextButtonThemeData(
       style: ButtonStyle(
-        elevation: MaterialStateProperty.all(0),
-        padding: MaterialStateProperty.all(
+        elevation: WidgetStateProperty.all(0),
+        padding: WidgetStateProperty.all(
           const EdgeInsets.symmetric(
               horizontal: AppConstants.defaultPadding,
               vertical: AppConstants.defaultPadding),
         ),
-        shape: MaterialStateProperty.all(
+        shape: WidgetStateProperty.all(
           RoundedRectangleBorder(
             borderRadius: AppConstants.borderRadius,
           ),

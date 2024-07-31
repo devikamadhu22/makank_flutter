@@ -2,14 +2,15 @@ import 'app_localizations.dart';
 
 /// The translations for English (`en`).
 class AppLocalizationsEn extends AppLocalizations {
-  AppLocalizationsEn([String locale = 'en']) : super(locale);
+  AppLocalizationsEn([super.locale = 'en']);
 
   @override
   String get title => 'Seeroo';
 
   @override
-  String get sample => '\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius velit sed justo euismod, ut pulvinar mi condimentum. Sed sagittis elementum ante a rhoncus. Praesent vulputate nisi ac lorem aliquam faucibus. Etiam velit urna, ullamcorper sit amet velit quis, convallis imperdiet libero. Phasellus posuere nec augue sed sollicitudin. Phasellus bibendum quis nisl et aliquam. Pellentesque cursus pharetra eros, vel vestibulum dolor vulputate a. Sed augue risus, congue vitae diam ut, malesuada venenatis est. Nullam non tempus tellus. Nam nec felis nec nunc tristique porttitor. Mauris consequat dui vel fringilla convallis. Quisque mollis laoreet risus, ut euismod eros rhoncus nec. Nunc non tellus eu augue efficitur viverra.';
+  String get sample =>
+      '\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius velit sed justo euismod, ut pulvinar mi condimentum. Sed sagittis elementum ante a rhoncus. Praesent vulputate nisi ac lorem aliquam faucibus. Etiam velit urna, ullamcorper sit amet velit quis, convallis imperdiet libero. Phasellus posuere nec augue sed sollicitudin. Phasellus bibendum quis nisl et aliquam. Pellentesque cursus pharetra eros, vel vestibulum dolor vulputate a. Sed augue risus, congue vitae diam ut, malesuada venenatis est. Nullam non tempus tellus. Nam nec felis nec nunc tristique porttitor. Mauris consequat dui vel fringilla convallis. Quisque mollis laoreet risus, ut euismod eros rhoncus nec. Nunc non tellus eu augue efficitur viverra.';
 
   @override
-  String get language_change => 'تم تغيير اللغة إلى العربية';
+  String get languageChanged => 'تم تغيير اللغة إلى العربية';
 }

@@ -64,7 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         success: (_) {
                           ScaffoldMessenger.of(context).hideCurrentSnackBar();
                           ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                            content: Text(context.loc.language_change),
+                            content: Text(context.loc.languageChanged),
                             backgroundColor: Colors.green,
                           ));
                         });
