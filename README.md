@@ -4,14 +4,17 @@ A template project for clean architecture with flutter_bloc.
 
 ### Flutter version:
 ```
-3.19.1
+3.22.2
 ```
 ### Dart version:
 ```
-3.2.0
+3.4.3
 ```
 
 ### Build runner cmd:
+``` bash
+fvm flutter pub run build_runner build --delete-conflicting-outputs -v
+```
 ``` bash
 flutter pub run build_runner build --delete-conflicting-outputs -v
 ```
@@ -21,7 +24,40 @@ dart pub run build_runner build --delete-conflicting-outputs -v
 
 ### Generate localization/translation cmd:
 ``` bash
+fvm flutter gen-l10n -v
+```
+``` bash
 flutter gen-l10n -v
+```
+
+### Generate icons
+```bash
+ flutter pub run flutter_launcher_icons
+```
+```bash
+ fvm flutter pub run flutter_launcher_icons
+```
+
+### Build apk for arm-64
+```bash
+ flutter build apk --target-platform=android-arm64 -v 
+```
+```bash
+ fvm flutter build apk --target-platform=android-arm64 -v 
+```
+### Build fat apk
+```bash
+ flutter build apk -v 
+```
+```bash
+ fvm flutter build apk -v 
+```
+### Build Apk bundle
+```bash
+ flutter build appbundle -v 
+```
+```bash
+ fvm flutter build appbundle -v 
 ```
 
 ## Things to note:
