@@ -9,10 +9,10 @@ part of 'get_user_response.dart';
 _$GetUserResponseImpl _$$GetUserResponseImplFromJson(
         Map<String, dynamic> json) =>
     _$GetUserResponseImpl(
-      page: json['page'] as int?,
-      perPage: json['per_page'] as int?,
-      total: json['total'] as int?,
-      totalPages: json['total_pages'] as int?,
+      page: (json['page'] as num?)?.toInt(),
+      perPage: (json['per_page'] as num?)?.toInt(),
+      total: (json['total'] as num?)?.toInt(),
+      totalPages: (json['total_pages'] as num?)?.toInt(),
       data: (json['data'] as List<dynamic>?)
           ?.map((e) => User.fromJson(e as Map<String, dynamic>))
           .toList(),

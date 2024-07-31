@@ -19,7 +19,7 @@ publish_to: "none" # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ">=3.2.0 <4.0.0"
+  sdk: ">=3.4.0 <4.0.0"
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -30,11 +30,11 @@ environment:
 dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  auto_route: ^7.8.4
+  auto_route: ^9.0.0
   awesome_dio_interceptor: ^1.0.0
   cupertino_icons: ^1.0.6
   dio: ^5.3.3
-  file_picker: ^6.1.1
+  file_picker: ^7.0.2
   flutter:
     sdk: flutter
   flutter_localizations:
@@ -45,19 +45,19 @@ dependencies:
   get_it: ^7.6.4
   http: ^1.1.0
   injectable: ^2.3.2
-  intl: ^0.18.1
+  intl: ^0.19.0
   json_annotation: ^4.8.1
 
 dev_dependencies:
-  auto_route_generator: ^7.3.2
-  build_runner: ^2.4.6
+  auto_route_generator: ^9.0.0
+  build_runner: ^2.4.11
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^3.0.1
+  flutter_lints: ^4.0.0
   flutter_test:
     sdk: flutter
   freezed: ^2.4.5

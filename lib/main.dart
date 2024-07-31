@@ -2,9 +2,9 @@ import 'package:awesome_dio_interceptor/awesome_dio_interceptor.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import 'di/injectable.dart';
+import 'l10n/app_localizations.dart';
 import 'presentation/core/router/app_router.dart';
 import 'presentation/core/theme/app_theme.dart';
 import 'presentation/core/utils/app_bloc_observer.dart';

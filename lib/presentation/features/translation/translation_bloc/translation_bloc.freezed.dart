@@ -12,7 +12,7 @@ part of 'translation_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$TranslationEvent {
@@ -77,10 +77,10 @@ class _$TranslationEventCopyWithImpl<$Res, $Val extends TranslationEvent>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? locale = freezed,
+    Object? locale = null,
   }) {
     return _then(_value.copyWith(
-      locale: freezed == locale
+      locale: null == locale
           ? _value.locale
           : locale // ignore: cast_nullable_to_non_nullable
               as Locale,
@@ -110,10 +110,10 @@ class __$$ChangeLanguageImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? locale = freezed,
+    Object? locale = null,
   }) {
     return _then(_$ChangeLanguageImpl(
-      locale: freezed == locale
+      locale: null == locale
           ? _value.locale
           : locale // ignore: cast_nullable_to_non_nullable
               as Locale,
@@ -135,16 +135,15 @@ class _$ChangeLanguageImpl implements _ChangeLanguage {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$ChangeLanguageImpl &&
-            const DeepCollectionEquality().equals(other.locale, locale));
+            (identical(other.locale, locale) || other.locale == locale));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(locale));
+  int get hashCode => Object.hash(runtimeType, locale);
 
   @JsonKey(ignore: true)
   @override
@@ -224,7 +223,7 @@ abstract class _ChangeLanguage implements TranslationEvent {
 
 /// @nodoc
 mixin _$TranslationState {
-  InvalidType get locale => throw _privateConstructorUsedError;
+  Locale get locale => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(Locale locale) initial,
@@ -287,7 +286,7 @@ abstract class $TranslationStateCopyWith<$Res> {
           TranslationState value, $Res Function(TranslationState) then) =
       _$TranslationStateCopyWithImpl<$Res, TranslationState>;
   @useResult
-  $Res call({InvalidType locale});
+  $Res call({Locale locale});
 }
 
 /// @nodoc
@@ -303,13 +302,13 @@ class _$TranslationStateCopyWithImpl<$Res, $Val extends TranslationState>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? locale = freezed,
+    Object? locale = null,
   }) {
     return _then(_value.copyWith(
-      locale: freezed == locale
+      locale: null == locale
           ? _value.locale
           : locale // ignore: cast_nullable_to_non_nullable
-              as InvalidType,
+              as Locale,
     ) as $Val);
   }
 }
@@ -336,10 +335,10 @@ class __$$InitialImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? locale = freezed,
+    Object? locale = null,
   }) {
     return _then(_$InitialImpl(
-      locale: freezed == locale
+      locale: null == locale
           ? _value.locale
           : locale // ignore: cast_nullable_to_non_nullable
               as Locale,
@@ -361,16 +360,15 @@ class _$InitialImpl implements _Initial {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$InitialImpl &&
-            const DeepCollectionEquality().equals(other.locale, locale));
+            (identical(other.locale, locale) || other.locale == locale));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(locale));
+  int get hashCode => Object.hash(runtimeType, locale);
 
   @JsonKey(ignore: true)
   @override
@@ -486,10 +484,10 @@ class __$$LoadingImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? locale = freezed,
+    Object? locale = null,
   }) {
     return _then(_$LoadingImpl(
-      locale: freezed == locale
+      locale: null == locale
           ? _value.locale
           : locale // ignore: cast_nullable_to_non_nullable
               as Locale,
@@ -511,16 +509,15 @@ class _$LoadingImpl implements _Loading {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$LoadingImpl &&
-            const DeepCollectionEquality().equals(other.locale, locale));
+            (identical(other.locale, locale) || other.locale == locale));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(locale));
+  int get hashCode => Object.hash(runtimeType, locale);
 
   @JsonKey(ignore: true)
   @override
@@ -636,11 +633,11 @@ class __$$FailedImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? locale = freezed,
+    Object? locale = null,
     Object? error = null,
   }) {
     return _then(_$FailedImpl(
-      locale: freezed == locale
+      locale: null == locale
           ? _value.locale
           : locale // ignore: cast_nullable_to_non_nullable
               as Locale,
@@ -668,17 +665,16 @@ class _$FailedImpl implements _Failed {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$FailedImpl &&
-            const DeepCollectionEquality().equals(other.locale, locale) &&
+            (identical(other.locale, locale) || other.locale == locale) &&
             (identical(other.error, error) || other.error == error));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(locale), error);
+  int get hashCode => Object.hash(runtimeType, locale, error);
 
   @JsonKey(ignore: true)
   @override
@@ -797,10 +793,10 @@ class __$$SuccessImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? locale = freezed,
+    Object? locale = null,
   }) {
     return _then(_$SuccessImpl(
-      locale: freezed == locale
+      locale: null == locale
           ? _value.locale
           : locale // ignore: cast_nullable_to_non_nullable
               as Locale,
@@ -822,16 +818,15 @@ class _$SuccessImpl implements _Success {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$SuccessImpl &&
-            const DeepCollectionEquality().equals(other.locale, locale));
+            (identical(other.locale, locale) || other.locale == locale));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(locale));
+  int get hashCode => Object.hash(runtimeType, locale);
 
   @JsonKey(ignore: true)
   @override
