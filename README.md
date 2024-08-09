@@ -4,11 +4,11 @@ A template project for clean architecture with flutter_bloc.
 
 ### Flutter version:
 ```
-3.22.2
+3.24.0
 ```
 ### Dart version:
 ```
-3.4.3
+3.5.0
 ```
 
 ### Build runner cmd:
