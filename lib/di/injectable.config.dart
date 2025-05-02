@@ -19,7 +19,10 @@ import '../data/services/api_service.dart' as _i315;
 import '../domain/core/base_constants.dart' as _i542;
 import '../domain/repository/user_repository.dart' as _i541;
 import '../domain/usecase/get_user_usecase.dart' as _i201;
+import '../domain/usecase/login_usecase.dart' as _i196;
 import '../presentation/features/home/blocs/home_bloc/home_bloc.dart' as _i320;
+import '../presentation/features/login/blocs/login_bloc/login_bloc.dart'
+    as _i974;
 import '../presentation/features/translation/translation_bloc/translation_bloc.dart'
     as _i550;
 
@@ -43,8 +46,12 @@ extension GetItInjectableX on _i174.GetIt {
         () => _i890.UserRepositoryImpl(gh<_i345.DataSource>()));
     gh.factory<_i201.GetUserUseCase>(
         () => _i201.GetUserUseCase(gh<_i541.UserRepository>()));
+    gh.factory<_i196.GetLoginUseCase>(
+        () => _i196.GetLoginUseCase(gh<_i541.UserRepository>()));
     gh.factory<_i320.HomeBloc>(
         () => _i320.HomeBloc(gh<_i201.GetUserUseCase>()));
+    gh.factory<_i974.LoginBloc>(
+        () => _i974.LoginBloc(gh<_i196.GetLoginUseCase>()));
     return this;
   }
 }

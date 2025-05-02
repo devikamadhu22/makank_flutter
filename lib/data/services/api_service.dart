@@ -7,7 +7,14 @@ import '../../domain/core/base_constants.dart';
 @module
 abstract class APIService {
   @Singleton()
-  Dio get dio => Dio(BaseOptions(
+  Dio get dio {
+    Dio dioInstance = Dio(BaseOptions(
       contentType: "application/json",
-      baseUrl: getIt.get<BaseConstants>().baseUrl));
+      baseUrl: getIt.get<BaseConstants>().baseUrl,
+      headers: {
+        'x-api-key': 'reqres-free-v1',
+      },
+    ));
+    return dioInstance;
+  }
 }

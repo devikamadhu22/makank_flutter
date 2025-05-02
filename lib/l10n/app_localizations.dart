@@ -95,23 +95,35 @@ abstract class AppLocalizations {
     Locale('en')
   ];
 
+  /// No description provided for @jobId.
+  ///
+  /// In en, this message translates to:
+  /// **'qwertyui'**
+  String get jobId;
+
   /// No description provided for @title.
   ///
   /// In en, this message translates to:
-  /// **'Seeroo'**
+  /// **'asdfghjkl'**
   String get title;
 
-  /// No description provided for @sample.
+  /// No description provided for @address.
   ///
   /// In en, this message translates to:
-  /// **'\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius velit sed justo euismod, ut pulvinar mi condimentum. Sed sagittis elementum ante a rhoncus. Praesent vulputate nisi ac lorem aliquam faucibus. Etiam velit urna, ullamcorper sit amet velit quis, convallis imperdiet libero. Phasellus posuere nec augue sed sollicitudin. Phasellus bibendum quis nisl et aliquam. Pellentesque cursus pharetra eros, vel vestibulum dolor vulputate a. Sed augue risus, congue vitae diam ut, malesuada venenatis est. Nullam non tempus tellus. Nam nec felis nec nunc tristique porttitor. Mauris consequat dui vel fringilla convallis. Quisque mollis laoreet risus, ut euismod eros rhoncus nec. Nunc non tellus eu augue efficitur viverra.'**
-  String get sample;
+  /// **'Kalamassery Metro Station, Kochi'**
+  String get address;
 
-  /// No description provided for @languageChanged.
+  /// No description provided for @date.
   ///
   /// In en, this message translates to:
-  /// **'تم تغيير اللغة إلى العربية'**
-  String get languageChanged;
+  /// **'Kochi Metro Station, Kochi'**
+  String get date;
+
+  /// No description provided for @paymentType.
+  ///
+  /// In en, this message translates to:
+  /// **'COD'**
+  String get paymentType;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

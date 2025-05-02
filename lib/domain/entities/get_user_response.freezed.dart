@@ -26,8 +26,12 @@ mixin _$GetUserResponse {
   int? get totalPages => throw _privateConstructorUsedError;
   List<User>? get data => throw _privateConstructorUsedError;
 
+  /// Serializes this GetUserResponse to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of GetUserResponse
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $GetUserResponseCopyWith<GetUserResponse> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -52,6 +56,8 @@ class _$GetUserResponseCopyWithImpl<$Res, $Val extends GetUserResponse>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of GetUserResponse
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -106,6 +112,8 @@ class __$$GetUserResponseImplCopyWithImpl<$Res>
       _$GetUserResponseImpl _value, $Res Function(_$GetUserResponseImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of GetUserResponse
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -190,12 +198,14 @@ class _$GetUserResponseImpl implements _GetUserResponse {
             const DeepCollectionEquality().equals(other._data, _data));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, page, perPage, total, totalPages,
       const DeepCollectionEquality().hash(_data));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of GetUserResponse
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$GetUserResponseImplCopyWith<_$GetUserResponseImpl> get copyWith =>
@@ -231,8 +241,11 @@ abstract class _GetUserResponse implements GetUserResponse {
   int? get totalPages;
   @override
   List<User>? get data;
+
+  /// Create a copy of GetUserResponse
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$GetUserResponseImplCopyWith<_$GetUserResponseImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
