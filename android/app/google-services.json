@@ -1,0 +1,129 @@
+{
+  "project_info": {
+    "project_number": "675968181090",
+    "firebase_url": "https://makank-270612.firebaseio.com",
+    "project_id": "makank-270612",
+    "storage_bucket": "makank-270612.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675968181090:android:c1ed4c1d344ecc1b75423b",
+        "android_client_info": {
+          "package_name": "com.makank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675968181090-1n5qfk6ml7o25sgo2jm1u9628nmhduo5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.makank",
+            "certificate_hash": "2f0f4081e44313189d0353cb4a1f6c6cf5f16b50"
+          }
+        },
+        {
+          "client_id": "675968181090-8d47s54tfp7sm7c72qt9vaqgamluv37b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.makank",
+            "certificate_hash": "3c066b69d4b0c609358ece5f2025218bedf9099d"
+          }
+        },
+        {
+          "client_id": "675968181090-elu9rdotlf6g1hb60mpgea22m8dajru6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.makank",
+            "certificate_hash": "29dbe6c9cba6bb17306c95e4df9f1728aaa52b9e"
+          }
+        },
+        {
+          "client_id": "675968181090-icraiebl4irfivt3gmil00ajo5msfobu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.makank",
+            "certificate_hash": "f83de8c70bafc1ef1c371c097e5b8b69db84dcb9"
+          }
+        },
+        {
+          "client_id": "675968181090-npvhkvlh4o3ghoq54o74k5gb1vs7ua8k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.makank",
+            "certificate_hash": "9c79e227f62d0a7a67a8f3fdbb5ce9af70f7f5da"
+          }
+        },
+        {
+          "client_id": "675968181090-6ukijojl16krchbjeel1opdfreb56kgm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxBHL7FTH36GPgHtVgYDLusb8-S3gq9No"
+        },
+        {
+          "current_key": "AIzaSyC0FeEd6C3Ga2_5W9RO9fE5VeUFrVLV7ps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675968181090-6ukijojl16krchbjeel1opdfreb56kgm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "675968181090-9gggjs6luh8md2jbcq4jdfhupvjsahmr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ae.makank"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675968181090:android:2821a115a7ef82d175423b",
+        "android_client_info": {
+          "package_name": "com.makank.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675968181090-6ukijojl16krchbjeel1opdfreb56kgm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxBHL7FTH36GPgHtVgYDLusb8-S3gq9No"
+        },
+        {
+          "current_key": "AIzaSyC0FeEd6C3Ga2_5W9RO9fE5VeUFrVLV7ps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675968181090-6ukijojl16krchbjeel1opdfreb56kgm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "675968181090-9gggjs6luh8md2jbcq4jdfhupvjsahmr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ae.makank"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
